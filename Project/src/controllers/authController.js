@@ -3,7 +3,7 @@ const User = require('../models/User');
 
 const generateToken = (user) => {
   const payload = { id: user._id, role: user.role };
-  return jwt.sign(payload, process.env.JWT_SECRET || 'change_this_to_a_secure_secret', { expiresIn: process.env.JWT_EXPIRES_IN || '7d' });
+  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN || '7d' });
 };
 
 exports.register = async (req, res, next) => {
