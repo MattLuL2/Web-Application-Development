@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const path = require('path');
 const morgan = require('morgan');
 const cors = require('cors');
 const connectDB = require('./config/db');
@@ -11,6 +12,9 @@ const app = express();
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());
+
+// Serve minimal frontend from src/public
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Connect to DB
 connectDB();
