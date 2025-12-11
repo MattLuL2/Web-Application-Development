@@ -12,7 +12,6 @@ function BookForm() {
   const handleSubmit = async e => {
     e.preventDefault();
     setMessage('');
-    // TODO: Replace with actual API call
     try {
       const res = await fetch('http://localhost:5000/api/books', {
         method: 'POST',

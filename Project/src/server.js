@@ -14,10 +14,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());
 
-// Serve minimal frontend from src/public
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Connect to DB
 connectDB();
 
 app.get('/', (req, res) => res.json({ message: 'Library App API - First Release' }));
@@ -26,7 +23,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/books', bookRoutes);
 app.use('/api/users', userRoutes);
 
-// error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.status || 500).json({ error: err.message || 'Server Error' });

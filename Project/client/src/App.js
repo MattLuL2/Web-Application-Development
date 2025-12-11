@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import { AuthProvider } from './context/AuthContext';
 import './styles/App.css';
 
-// Lazy load pages for better performance
 const Home = lazy(() => import('./pages/Home'));
 const SignUp = lazy(() => import('./pages/SignUp'));
 const SignIn = lazy(() => import('./pages/SignIn'));

@@ -5,7 +5,6 @@ function BookList() {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    // TODO: Replace with actual API call
     fetch('http://localhost:5000/api/books')
       .then(res => res.json())
       .then(data => setBooks(data))

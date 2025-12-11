@@ -4,7 +4,6 @@ function UserList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    // TODO: Replace with actual API call
     fetch('http://localhost:5000/api/users')
       .then(res => res.json())
       .then(data => setUsers(data))
