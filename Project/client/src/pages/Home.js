@@ -7,7 +7,7 @@ function Home() {
   const { user } = useContext(AuthContext);
   return (
     <div className="home-page">
-      <h1>Book Management App</h1>
+      <h1>Lloyd's Library</h1>
       <img src={require('../assets/logo.png')} alt="Team Logo" className="team-logo" />
       <p>Welcome to our book management platform!</p>
       <BookList />
