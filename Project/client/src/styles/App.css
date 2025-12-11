@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.home-page, .auth-page, .books-page, .users-page, .profile-page {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.btn:hover {
+  background: #0056b3;
+}
+.error {
+  color: #d9534f;
+  margin-top: 1rem;
+}
+.message {
+  color: #28a745;
+  margin-top: 1rem;
+}
+.team-logo, .logo {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+.auth-links {
+  margin-top: 2rem;
+}

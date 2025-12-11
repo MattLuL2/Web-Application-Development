@@ -1,0 +1,9 @@
+.profile-info {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+.profile-info p {
+  margin: 0.5rem 0;
+}

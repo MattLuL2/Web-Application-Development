@@ -7,6 +7,7 @@ const connectDB = require('./config/db');
 
 const authRoutes = require('./routes/auth');
 const bookRoutes = require('./routes/books');
+const userRoutes = require('./routes/users');
 
 const app = express();
 app.use(express.json());
@@ -23,6 +24,7 @@ app.get('/', (req, res) => res.json({ message: 'Library App API - First Release'
 
 app.use('/api/auth', authRoutes);
 app.use('/api/books', bookRoutes);
+app.use('/api/users', userRoutes);
 
 // error handler
 app.use((err, req, res, next) => {
